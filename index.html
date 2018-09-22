@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +9,33 @@
     <title>Zero to Hero With Vue.js</title>
 </head>
 <div id="app">
+    <navbar></navbar>
     <span v-if="hasMessage" :title="vue">{{ message }}</span>
     <button @click="logMessage"> Click Me! </button>
     <button @click="toggleMessage"> Toggle Message! </button>
+    <form>
+        <input v-model.trim="message" type="text" />
+        <input v-model="hasMessage" type="checkbox" />
+        <select v-model="selected">
+            <option disabled value="">What is your OS of choice?</option>
+            <option>Mac</option>
+            <option>Windows</option>
+            <option>Linux</option>
+        </select>
+        <span> Selected: {{selected}} </span>
+    </form>
+    <ul>
+        <li v-for='message in messages'>
+            {{message.text}}
+        </li>
+    </ul>
+    <counter></counter>
 </div>
+
 <body>
-    
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="app.js"></script>
+
 </html>
