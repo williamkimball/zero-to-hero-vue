@@ -1,0 +1,27 @@
+{
+  "name": "zero-to-hero-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamkimball/zero-to-hero-vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamkimball/zero-to-hero-vue/issues"
+  },
+  "homepage": "https://github.com/williamkimball/zero-to-hero-vue#readme",
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-vue": "^1.5.0"
+  }
+}
